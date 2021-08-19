@@ -1,0 +1,92 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  margin: 0;
+  background-color: black;
+  /* font-size: 0; */
+}
+
+svg {
+  fill: white;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+/* left portions */
+
+.left-menu {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+  flex: 2;
+  flex-direction: column;
+  /* position: fixed; */
+}
+
+/* left top portion */
+.left-div1 {
+  display: flex;
+  flex-direction: column;
+  /* flex: 3; */
+}
+.left-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.left-items {
+  font-size: 20px;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  display: flex;
+  margin: 16px 0;
+}
+
+.left-items:hover {
+  background-color: rgb(39, 39, 39);
+  border-radius: 9999px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.left-a {
+  color: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.a-home {
+  font-weight: 700;
+}
+
+/* left tweet */
+.left-tweet {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+}
+
+.left-tweet-a {
+  background-color: rgb(29, 161, 242);
+  border-radius: 9999px;
+  color: white;
+  flex: 1;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  padding-left: 32px;
+  padding-right: 32px;
+  min-width: 52px;
+  min-height: 52px;
+}
+.right-section {
+  flex: 8;
+  border: 1px solid white;
+}
