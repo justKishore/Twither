@@ -7,13 +7,10 @@ body {
   /* font-size: 0; */
 }
 
-svg {
-  fill: white;
-}
 .main-container {
   display: flex;
   flex-direction: row;
-  color: white;
+  color: rgb(217, 217, 217);
 }
 
 /* left portions */
@@ -24,35 +21,49 @@ svg {
   /* align-items: flex-end; */
   flex: 2;
   flex-direction: column;
-  /* position: fixed; */
+  height: 100vh;
+  padding-left: 120px;
 }
 
 /* left top portion */
 .left-div1 {
   display: flex;
   flex-direction: column;
-  /* flex: 3; */
+  margin-top: 6px;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.logo:hover {
+  background-color: rgb(15, 15, 15);
+  border-radius: 100%;
 }
 .left-logo {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  fill: rgb(217, 217, 217);
 }
 
 .left-items {
   font-size: 20px;
   font-family: "Segoe UI", "Roboto", sans-serif;
   display: flex;
-  margin: 16px 0;
+  /* margin: 16px 0; */
+  margin-bottom: 12px;
+  padding: 6px;
 }
 
 .left-items:hover {
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(15, 15, 15);
   border-radius: 9999px;
 }
 .icon {
   width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  margin: 2px 12px 0;
 }
 
 .left-a {
@@ -68,25 +79,569 @@ svg {
 /* left tweet */
 .left-tweet {
   display: flex;
-  align-items: center;
   width: 90%;
-  justify-content: center;
+  margin-left: 12px;
 }
 
 .left-tweet-a {
-  background-color: rgb(29, 161, 242);
-  border-radius: 9999px;
-  color: white;
-  flex: 1;
-  font-size: 20px;
+  flex: 0.9;
+  font-family: "Segoe UI", "Roboto", sans-serif;
   font-weight: 700;
+  text-align: center;
+  background-color: rgb(29, 161, 242);
   text-decoration: none;
-  padding-left: 32px;
-  padding-right: 32px;
-  min-width: 52px;
-  min-height: 52px;
+  color: rgb(217, 217, 217);
+  font-size: 20px;
+  padding: 12px 12px;
+  border-radius: 9999px;
 }
+
+.left-tweet-a:hover {
+  background-color: rgb(24, 146, 221);
+  transition-duration: 0.2s;
+}
+
+/* End of left top portion */
+
+/* left bottom portion */
+.left-div2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 14px 12px 12px 0;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.left-div2:hover {
+  background-color: rgb(15, 15, 15);
+  border-radius: 9999px;
+}
+.left-profile-pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  /* margin: auto; */
+}
+.account-details {
+  height: 40px;
+}
+.account-details h3 {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.account-details p {
+  color: rgb(110, 118, 125);
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+.account-options {
+  align-self: center;
+}
+/* end of left menu */
+
 .right-section {
   flex: 8;
-  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+  flex-direction: row;
+  /* height: 100vh; */
+  padding-right: 120px;
+}
+
+.right-div1 {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(29, 29, 29);
+}
+.r-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 2px solid rgb(29, 29, 29);
+}
+
+.nav-title h1 {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.top-feeds {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-self: center;
+}
+
+.top-feeds:hover {
+  background-color: rgb(20, 20, 20);
+  border-radius: 100%;
+  transition-duration: 0.5s;
+}
+.feeds-icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  fill: white;
+}
+
+/* feeds part */
+
+.r-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-lable {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid rgb(29, 29, 29);
+  padding: 10px 16px;
+}
+
+.home-profile {
+  height: 100%;
+}
+.home-profile img {
+  width: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* .home-profile img:hover {
+  cursor: pointer;
+} */
+
+.home-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.whats-happening {
+  color: #6e767d;
+  width: 100%;
+  height: 48px;
+  display: flex;
+
+  padding-top: 5px;
+}
+
+::placeholder {
+  color: #6e767d;
+}
+#whats-happening-uip {
+  flex: 1;
+  font-size: 20px;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  color: #6e767d;
+  background-color: black;
+  border: none;
+}
+#whats-happening-uip:focus {
+  outline: none;
+  color: rgb(217, 217, 217);
+}
+
+/* whats-happening-options fot those icons and tweet button in the middel part*/
+
+.whats-happening-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-top: 20px; */
+}
+
+.wh-icons {
+  flex: 0.5;
+  display: flex;
+  width: auto;
+}
+
+.home-icon {
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  /* align-items: center; */
+}
+.home-icon:hover {
+  border-radius: 100%;
+  background-color: rgba(47, 150, 214, 0.103);
+  cursor: pointer;
+}
+.home-icon-svg {
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  fill: rgb(29, 161, 242);
+}
+
+.home-tweet {
+  display: flex;
+  padding: 6px 0;
+}
+
+.home-tweet-a {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgb(29, 161, 242);
+  text-decoration: none;
+  color: rgb(217, 217, 217);
+  padding: 6px 16px;
+  border-radius: 9999px;
+  opacity: 0.5;
+}
+
+/* feed contents */
+.tweet-feeds {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.feeds-profile-pic {
+  height: 100%;
+}
+
+.feeds-profile-pic img {
+  width: 50px;
+  border-radius: 100%;
+}
+
+.feeds-contents {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.feeds-account-details {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* this hold posters account name and details */
+.feed-account-detail-main {
+  display: flex;
+}
+
+.feed-account-detail-main span {
+  /* margin: 0; */
+  color: rgb(110, 118, 125);
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 15px;
+}
+.feed-uname {
+  color: rgb(217, 217, 217) !important;
+  font-weight: 600;
+}
+
+.feed-uname:hover {
+  text-decoration: underline;
+}
+.feed-verified {
+  height: 20px;
+  margin: 0 2px;
+  fill: rgb(217, 217, 217);
+}
+
+.more-icon {
+  width: 34.75px;
+  height: 34.75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-icon:hover {
+  color: rgb(29, 161, 242);
+  background-color: rgba(47, 150, 214, 0.103);
+  border-radius: 100%;
+}
+
+.feeds-post-details {
+  position: relative;
+  bottom: 12px;
+}
+.feeds-post-details p {
+  margin: 0;
+  word-spacing: 2px;
+}
+
+.feeds-post-details span {
+  color: rgb(217, 217, 217);
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 13px;
+}
+
+.feed-span-hr:hover {
+  text-decoration: underline;
+}
+.hashtag {
+  color: rgb(27, 149, 224) !important;
+  font-size: 15px !important;
+}
+
+.hashtag:hover {
+  text-decoration: underline;
+}
+.feeds-post-img {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.post {
+  flex: 1;
+  height: 400px;
+  border: 1px solid rgb(47, 51, 54);
+  border-radius: 16px;
+  outline: none;
+}
+
+.feeds-post-reactions {
+  margin-top: 12px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reaction {
+  display: flex;
+  flex-direction: row;
+}
+
+.reaction-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reaction svg {
+  width: 18px;
+  height: 18px;
+  fill: rgb(110, 118, 125);
+}
+
+.reaction-number {
+  display: flex;
+  align-items: center;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+  margin-left: 12px;
+}
+
+.right-div2 {
+  flex: 3.5;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10% 0 3%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  color: rgb(110, 118, 125);
+  background-color: rgb(32, 35, 39);
+  height: 38px;
+  margin-top: 6px;
+  padding: 0px 22px;
+  border: 1px solid black;
+  border-radius: 9999px;
+}
+
+.search-container:focus-within {
+  background-color: black;
+  border: 1px solid rgb(29, 161, 242);
+  color: rgb(29, 161, 242);
+}
+.search-input-area {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-left: 12px;
+}
+
+#search-input {
+  flex: 1;
+  font-size: 14px;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  color: #6e767d;
+  background-color: inherit;
+  border: none;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+/* suggestions container */
+
+.suggestions-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10%;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(21, 24, 28);
+  margin-top: 58px;
+  border-radius: 12px;
+}
+
+.trending h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  padding: 12px 22px;
+}
+
+.trending-hastags {
+  display: flex;
+  cursor: pointer;
+  padding: 12px 6px 12px 22px;
+}
+
+.trending-hastags:hover {
+  background-color: rgb(32, 35, 39);
+}
+.trending-hastag-contents {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+.trending-hastag-contents h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.trending-span {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.trending-link {
+  display: flex;
+  cursor: pointer;
+  padding: 12px 6px 12px 22px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.trending-link:hover {
+  background-color: rgb(32, 35, 39);
+}
+.tl-show-more {
+  flex: 1;
+  text-decoration: none;
+  color: rgb(29, 161, 242);
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.who-to-follow {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(21, 24, 28);
+  margin-top: 58px;
+  border-radius: 12px;
+}
+
+.who-to-follow h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  padding: 12px 22px;
+}
+
+.follow {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 22px;
+  justify-content: space-between;
+}
+
+.follow:hover {
+  background-color: rgb(32, 35, 39);
+}
+
+.follow-suggestions {
+  display: flex;
+  flex-direction: row;
+}
+
+.follow-image img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  margin-right: 6px;
+}
+
+.follow-account h3,
+.follow-account p {
+  margin: 0;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+.follow-account h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.follow-account h3:hover {
+  text-decoration: underline;
+}
+.follow-account p {
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+}
+
+.follow-button {
+  display: flex;
+  align-items: flex-start;
+}
+
+.follow-a {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgb(239, 243, 244);
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 9999px;
+}
+
+.sticky-menu {
+  position: sticky;
+  top: -0.5px;
+  background-color: black;
+  z-index: 2;
+}
+
+.sticky-menu-2 {
+  position: sticky;
+  top: -1px;
+  z-index: 1;
 }
